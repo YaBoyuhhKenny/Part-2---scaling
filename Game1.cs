@@ -51,7 +51,7 @@ namespace Part_2___scaling
 
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.Coral);
 
             // TODO: Add your drawing code here
             _spriteBatch.Begin();
@@ -61,7 +61,7 @@ namespace Part_2___scaling
             _spriteBatch.Draw(rectTexture, new Rectangle(245, 300, 275, 40), Color.Black);
             _spriteBatch.Draw(circTexture, new Rectangle(425, 125, 70, 70), Color.Black);
             _spriteBatch.Draw(circTexture, new Rectangle(275, 125, 70, 70), Color.Black);
-            _spriteBatch.DrawString(textFont, "That joke sucked.", new Vector2(10, 50), Color.Black);
+            _spriteBatch.DrawString(textFont, "That joke sucked.", new Vector2(10, 30), Color.Black);
             
             _spriteBatch.End();
 
