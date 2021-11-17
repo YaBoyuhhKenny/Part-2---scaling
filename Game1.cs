@@ -11,7 +11,7 @@ namespace Part_2___scaling
 
         Texture2D rectTexture;
         Texture2D circTexture;
-        
+        SpriteFont textFont;
 
         public Game1()
         {
@@ -36,6 +36,7 @@ namespace Part_2___scaling
 
             rectTexture = Content.Load<Texture2D>("rectangle");
             circTexture = Content.Load<Texture2D>("circle");
+            textFont = Content.Load<SpriteFont>("TextFont");
         }
 
         protected override void Update(GameTime gameTime)
@@ -60,6 +61,7 @@ namespace Part_2___scaling
             _spriteBatch.Draw(rectTexture, new Rectangle(245, 300, 275, 40), Color.Black);
             _spriteBatch.Draw(circTexture, new Rectangle(425, 125, 70, 70), Color.Black);
             _spriteBatch.Draw(circTexture, new Rectangle(275, 125, 70, 70), Color.Black);
+            _spriteBatch.DrawString(textFont, "That joke sucked.", new Vector2(10, 50), Color.Black);
             
             _spriteBatch.End();
 
